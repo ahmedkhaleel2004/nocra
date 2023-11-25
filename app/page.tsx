@@ -87,7 +87,7 @@ export default function Home() {
 						</p>
 						<p className="text-xl mb-4">
 							Score from grades will follow the formula of: (Relative)
-							Difficulty * Grade, using last year's course data.
+							Difficulty * Current Grade, using last year's course data.
 						</p>
 						<p className="text-xl">
 							The projects are more interesting. Assessment of these will be
@@ -96,7 +96,7 @@ export default function Home() {
 						{/* ... more content ... */}
 					</div>
 					{/* Image container */}
-					<div className="flex justify-center md:justify-center pr-[10rem]">
+					<div className="flex justify-center md:justify-center pr-[10rem] pb-[5rem]">
 						<img
 							src="/correct.png"
 							alt="Checkmark"
