@@ -21,12 +21,19 @@ const CourseCard: React.FC<CourseCardProps> = ({
 }) => {
 	const roundedGrade = Math.round(Number(currentGrade) * 100);
 	return (
-		<div className="bg-white shadow-md rounded-lg p-4 mb-4">
+		<div className="bg-white rounded-lg p-4 mb-4 min-h-[18rem] shadow-2xl">
 			<div className="flex justify-between items-center">
 				<h3 className="text-xl font-semibold">{courseName}</h3>
-				<span className="text-lg text-white bg-green-600 rounded px-2 font-semibold">
-					{roundedGrade}
-				</span>
+				<div className="flex items-center">
+					<span className="text-lg text-white bg-body-blue rounded px-2 font-semibold">
+						{roundedGrade}
+					</span>
+					<span className="mx-2 text-lg font-semibold">→</span>
+					<span className="text-lg text-white bg-green-600 rounded px-2 font-semibold">
+						{/* Second score goes here */}
+						+75
+					</span>
+				</div>
 			</div>
 			<div className="mt-4">
 				{assignments.map((assignment) => (

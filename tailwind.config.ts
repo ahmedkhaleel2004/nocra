@@ -18,6 +18,15 @@ const config: Config = {
       backgroundImage: {
         'full-page-gradient': 'linear-gradient(90deg, #519ef0, #1960d4)',
       },
+      keyframes: {
+        slideDown: {
+          '0%': { opacity: '0', transform: 'translateY(-1rem)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        slideDown: 'slideDown 0.5s ease-out forwards',
+      },
     },
   },
   plugins: [],

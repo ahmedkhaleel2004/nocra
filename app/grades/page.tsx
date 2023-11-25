@@ -32,7 +32,7 @@ const Grades = () => {
 			Assignments: 20,
 			Exam: 40,
 		},
-		"ENGINEER 1P13": {
+		"ENG 1P13": {
 			Projects: 30,
 			Midterm: 20,
 			Assessments: 10,
@@ -78,7 +78,7 @@ const Grades = () => {
 			Assignments: 11,
 			Exam: 0,
 		},
-		"ENGINEER 1P13": {
+		"ENG 1P13": {
 			Projects: 15,
 			Midterm: 15,
 			Assessments: 5,
@@ -163,9 +163,22 @@ const Grades = () => {
 					</svg>
 				</div>
 			</main>
-			<section className="grid grid-cols-1 md:grid-cols-3 gap-16 p-4 pt-16 max-w-[65rem] mx-auto">
-				{courseCardsData.map((course) => (
-					<CourseCard key={course.courseName} {...course} />
+			<div className="flex flex-col h-full justify-center items-center">
+				<div className="text-center">
+					<p className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem]">
+						{name}'s Grades
+					</p>
+				</div>
+			</div>
+			<section className="grid grid-cols-1 md:grid-cols-3 gap-16 p-4 max-w-[65rem] mx-auto">
+				{courseCardsData.map((course, index) => (
+					<div
+						key={course.courseName}
+						className="opacity-0 translate-y-4 animate-slideDown"
+						style={{ animationDelay: `${index * 50}ms` }}
+					>
+						<CourseCard {...course} />
+					</div>
 				))}
 			</section>
 		</>
