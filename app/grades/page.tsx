@@ -105,6 +105,19 @@ const Grades = () => {
 			Labs: 14,
 		},
 	};
+	interface LastYearAverages {
+		[courseCode: string]: number;
+	}
+
+	const lastYearAverages: LastYearAverages = {
+		"MATH 1ZA3": 53,
+		"MATH 1ZB3": 41,
+		"MATH 1ZC3": 75,
+		"ENG 1P13": 98,
+		"PHYSICS 1D03": 24,
+		"PHYSICS 1E03": 51,
+		"CHEM 1E03": 88,
+	};
 
 	function calculateCurrentGrades(
 		courses: CourseStructure,
@@ -177,7 +190,10 @@ const Grades = () => {
 						className="opacity-0 translate-y-4 animate-slideDown"
 						style={{ animationDelay: `${index * 50}ms` }}
 					>
-						<CourseCard {...course} />
+						<CourseCard
+							{...course}
+							lastYearAverage={lastYearAverages[course.courseName]}
+						/>
 					</div>
 				))}
 			</section>

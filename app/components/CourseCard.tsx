@@ -12,14 +12,19 @@ interface CourseCardProps {
 	courseName: string;
 	assignments: Assignment[];
 	currentGrade: string | number;
+	lastYearAverage: number;
 }
 
 const CourseCard: React.FC<CourseCardProps> = ({
 	courseName,
 	assignments,
 	currentGrade,
+	lastYearAverage,
 }) => {
 	const roundedGrade = Math.round(Number(currentGrade) * 100);
+	const difficulty = 100 - lastYearAverage; // Assuming lower average means higher difficulty
+	const difficultyScore = (difficulty * roundedGrade) / 100;
+
 	return (
 		<div className="bg-white rounded-lg p-4 mb-4 min-h-[18rem] shadow-2xl">
 			<div className="flex justify-between items-center">
@@ -30,8 +35,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
 					</span>
 					<span className="mx-2 text-lg font-semibold">→</span>
 					<span className="text-lg text-white bg-green-600 rounded px-2 font-semibold">
-						{/* Second score goes here */}
-						+75
+						+{difficultyScore.toFixed(2)} {/* Display the calculated score */}
 					</span>
 				</div>
 			</div>
