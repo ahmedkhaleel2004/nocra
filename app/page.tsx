@@ -1,22 +1,23 @@
 // /app/page.tsx
+import { SiGoogle } from "@icons-pack/react-simple-icons";
 
 export default function Home() {
 	return (
 		<>
-			<main className="relative pt-[14rem] text-white">
-				<div className="flex">
-					<div>
-						<p className="text-6xl px-[10rem] font-bold ">Fuel your ego.</p>
-						<p className="text-2xl px-[10rem] pt-8 pb-[24rem]">
-							Compete to rank up in your career.
+			<main className="relative pt-[8rem] text-white">
+				<div className="flex flex-col h-full justify-center items-center">
+					<div className="text-center">
+						<p className="text-6xl px-[10rem] font-bold">
+							Let the results speak
+						</p>
+						<p className="text-2xl px-[10rem] pt-8">
+							Compete to rank up in your career. Fuel your superiority complex.
 						</p>
 					</div>
-					<div className="">
-						<img
-							src="/trophy.png" // White logo path
-							alt="Nocra Logo"
-							className="h-[24rem]"
-						/>
+					<div className="pt-4 flex justify-center items-center pb-[24rem]">
+						<button className="text-xl bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4 shadow-xl transition duration-200 ease-in-out">
+							<SiGoogle className="mr-3 h-[1.5rem]" /> Sign In
+						</button>
 					</div>
 				</div>
 				{/* Adjust the transform translate to position the SVG correctly */}
@@ -31,10 +32,26 @@ export default function Home() {
 				</div>
 			</main>
 			<section className="bg-white pt-16">
-				{/* Adjust padding-top to push content below the SVG path */}
-				<div className="container mx-auto px-4">
-					<h2 className="text-4xl font-bold mb-4">How it Works</h2>
-					{/* ... more content ... */}
+				{/* Grid container */}
+				<div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+					{/* Text content container */}
+					<div className="pl-[16rem]">
+						<h2 className="text-5xl font-bold mb-6">How it works</h2>
+						<p className="text-xl mb-4">
+							No motivation to study? Do you feel like everyone else is speeding
+							past you? Imposter syndrome?
+						</p>
+						<p className="text-xl mb-4">
+							If only there was a way to directly compete and compare your
+							performance, just like in video games.
+						</p>
+						<p className="text-xl">This is the purpose of Nocra.</p>
+						{/* ... more content ... */}
+					</div>
+					{/* Image container */}
+					<div className="flex justify-center md:justify-center">
+						<img src="/trophy.png" alt="Trophy" className="max-w-full h-auto" />
+					</div>
 				</div>
 			</section>
 		</>
