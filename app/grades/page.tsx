@@ -183,7 +183,7 @@ const Grades = () => {
 					</p>
 				</div>
 			</div>
-			<section className="grid grid-cols-1 md:grid-cols-3 gap-16 p-4 max-w-[65rem] mx-auto">
+			<section className="grid grid-cols-1 md:grid-cols-3 gap-16 p-4 pb-16 max-w-[65rem] mx-auto">
 				{courseCardsData.map((course, index) => (
 					<div
 						key={course.courseName}

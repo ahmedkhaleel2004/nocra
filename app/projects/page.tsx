@@ -45,15 +45,21 @@ const Projects = () => {
 					</div>
 				</div>
 				{projects.map((project, index) => (
-					<ProjectCard
+					<div
 						key={index}
-						title={project.title}
-						score={project.score}
-						description={project.description}
-						tags={project.tags}
-						date={project.date}
-						imageUrl={project.imageUrl}
-					/>
+						className="opacity-0 translate-y-4 animate-slideDown"
+						style={{ animationDelay: `${index * 50}ms` }}
+					>
+						<ProjectCard
+							key={index}
+							title={project.title}
+							score={project.score}
+							description={project.description}
+							tags={project.tags}
+							date={project.date}
+							imageUrl={project.imageUrl}
+						/>
+					</div>
 				))}
 			</section>
 		</>

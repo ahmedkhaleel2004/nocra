@@ -26,7 +26,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
 	const difficultyScore = (difficulty * roundedGrade) / 100;
 
 	return (
-		<div className="bg-white rounded-lg p-4 mb-4 min-h-[18rem] shadow-2xl">
+		<div className="bg-white rounded-lg p-4 mb-4  shadow-2xl">
 			<div className="flex justify-between items-center">
 				<h3 className="text-xl font-semibold">{courseName}</h3>
 				<div className="flex items-center">
