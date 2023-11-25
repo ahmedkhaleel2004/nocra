@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-dm-sans)'], // Using DM Sans as the primary sans font
+      },
+      colors: {
+				"body-blue": "#4696EC",
+        "body-dark-blue": "#2970e3",
+			},
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'full-page-gradient': 'linear-gradient(90deg, #4696EC, #2970e3)',
       },
     },
   },

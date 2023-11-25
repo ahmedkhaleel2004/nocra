@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html, body {
+      @apply bg-full-page-gradient;
+      background-size: 100% 100vh; /* This ensures the gradient covers the full height of the viewport */
+      min-height: 100vh; /* This ensures the html/body is at least the height of the viewport */
+    }
+  }
+
+  /* Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	-ms-overflow-style: none; /* for MS Edge */
+	scrollbar-width: none; /* Firefox */
+}
