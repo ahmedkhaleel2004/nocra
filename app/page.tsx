@@ -4,7 +4,7 @@ import { SiGoogle } from "@icons-pack/react-simple-icons";
 export default function Home() {
 	return (
 		<>
-			<main className="relative pt-[8rem] text-white">
+			<main className="relative pt-[10rem] text-white">
 				<div className="flex flex-col h-full justify-center items-center">
 					<div className="text-center">
 						<p className="text-6xl px-[10rem] font-bold">
@@ -14,7 +14,7 @@ export default function Home() {
 							Compete to rank up in your career. Fuel your superiority complex.
 						</p>
 					</div>
-					<div className="pt-4 flex justify-center items-center pb-[24rem]">
+					<div className="pt-4 flex justify-center items-center pb-[20rem]">
 						<button className="text-xl bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4 shadow-xl transition duration-200 ease-in-out">
 							<SiGoogle className="mr-3 h-[1.5rem]" /> Sign In
 						</button>
@@ -31,7 +31,7 @@ export default function Home() {
 					</svg>
 				</div>
 			</main>
-			<section className="bg-white pt-16">
+			<section className="bg-white pt-10">
 				{/* Grid container */}
 				<div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 					{/* Text content container */}
@@ -51,6 +51,57 @@ export default function Home() {
 					{/* Image container */}
 					<div className="flex justify-center md:justify-center">
 						<img src="/trophy.png" alt="Trophy" className="max-w-full h-auto" />
+					</div>
+				</div>
+				<div className="pt-16 container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+					{/* Text content container */}
+					<div className="flex justify-center md:justify-center pl-[14rem]">
+						<img src="/data.png" alt="Data" className="max-w-full h-[20rem]" />
+					</div>
+					<div className="pl-[4rem] max-w-[35rem]">
+						{" "}
+						{/* custom css dimensions here, highkey hardcoded NOT MOBILE FRIENDLY */}
+						<h2 className="text-5xl font-bold mb-6">The System</h2>
+						<p className="text-xl mb-4">
+							No lone set of grades have ever accurately predicted a student's
+							success.
+						</p>
+						<p className="text-xl mb-4">
+							Careers require involvement and extracurriculars. Whether it be
+							projects, events, competitions, hobbies, etc.
+						</p>
+						<p className="text-xl">
+							That's why we evaluate rank based on both grades and additional
+							excursions. For simplicity, we'll call them: "Projects".
+						</p>
+						{/* ... more content ... */}
+					</div>
+				</div>
+				<div className="pt-16 container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+					{/* Text content container */}
+					<div className="pl-[16rem]">
+						<h2 className="text-5xl font-bold mb-6">Accuracy</h2>
+						<p className="text-xl mb-4">
+							How can we fairly calculate student's ranks across all programs
+							and disciplines?
+						</p>
+						<p className="text-xl mb-4">
+							Score from grades will follow the formula of: (Relative)
+							Difficulty * Grade, using last year's course data.
+						</p>
+						<p className="text-xl">
+							The projects are more interesting. Assessment of these will be
+							based on two scores: Peer review and AI Analysis.
+						</p>
+						{/* ... more content ... */}
+					</div>
+					{/* Image container */}
+					<div className="flex justify-center md:justify-center pr-[10rem]">
+						<img
+							src="/correct.png"
+							alt="Checkmark"
+							className="max-w-full h-auto"
+						/>
 					</div>
 				</div>
 			</section>
