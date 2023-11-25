@@ -10,16 +10,22 @@ const Footer = () => {
 					© {new Date().getFullYear()} Nocra. All rights reserved.
 				</p>
 				<div className="flex space-x-4">
-					<Link href="/" className="text-black hover:text-black">
+					<Link href="/" className="text-black hover:text-body-dark-blue">
 						Home
 					</Link>
-					<Link href="/projects" className="text-black hover:text-black">
+					<Link
+						href="/projects"
+						className="text-black hover:text-body-dark-blue"
+					>
 						Projects
 					</Link>
-					<Link href="/grades" className="text-black hover:text-black">
+					<Link href="/grades" className="text-black hover:text-body-dark-blue">
 						Grades
 					</Link>
-					<Link href="/leaderboard" className="text-black hover:text-black">
+					<Link
+						href="/leaderboard"
+						className="text-black hover:text-body-dark-blue"
+					>
 						Leaderboard
 					</Link>
 				</div>

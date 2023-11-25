@@ -7,14 +7,17 @@ const Projects = () => {
 		{
 			title: "Dexterity Dash",
 			score: "253",
-			learnings: "Inventor, RPi, Code",
+			description:
+				"A custom physical therapy solution for MS patients to improve hand mobility and remain active.",
+			tags: "Inventor, RPi, Code",
 			date: "2028-10-10",
 			imageUrl: "/dummyImage.png",
 		},
 		{
 			title: "Code!",
 			score: "129",
-			learnings: "Today I coded a workshop bot.",
+			description: "Today I coded a discord bot.",
+			tags: "Python, Requests, Async/Await",
 			date: "2023-08-29",
 			imageUrl: "/code.jpg",
 		},
@@ -33,13 +36,10 @@ const Projects = () => {
 					</svg>
 				</div>
 			</main>
-			<section className=" flex flex-col justify-center items-center">
+			<section className=" flex flex-col justify-center items-center mb-16">
 				<div className="flex flex-col h-full justify-center items-center">
 					<div className="text-center">
-						<p
-							style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
-							className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem]"
-						>
+						<p className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem]">
 							{name}'s Projects
 						</p>
 					</div>
@@ -49,7 +49,8 @@ const Projects = () => {
 						key={index}
 						title={project.title}
 						score={project.score}
-						learnings={project.learnings}
+						description={project.description}
+						tags={project.tags}
 						date={project.date}
 						imageUrl={project.imageUrl}
 					/>
