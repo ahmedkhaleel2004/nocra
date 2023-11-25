@@ -39,7 +39,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					<h2 className="text-2xl font-bold inline mr-2">{title}</h2>
 					<span className="text-gray-600 text-md">| {date}</span>
 				</span>
-				<span className="text-green-500 font-bold">+{score} score!</span>
+				<span className="text-white rounded-lg bg-green-600 p-1 font-semibold">
+					+{score} score!
+				</span>
 			</div>
 			<div className="w-full px-4">
 				<p className="text-gray-600">{description}</p>

@@ -12,11 +12,11 @@ const config: Config = {
         sans: ['var(--font-dm-sans)'], // Using DM Sans as the primary sans font
       },
       colors: {
-				"body-blue": "#519ef0",
-        "body-dark-blue": "#1960d4",
+				"body-blue": "#65aefc",
+        "body-dark-blue": "#134fb0",
 			},
       backgroundImage: {
-        'full-page-gradient': 'linear-gradient(90deg, #519ef0, #1960d4)',
+        'full-page-gradient': 'linear-gradient(90deg, #65aefc, #134fb0)',
       },
       keyframes: {
         slideDown: {
