@@ -4,7 +4,7 @@ import { SiGoogle } from "@icons-pack/react-simple-icons";
 export default function Home() {
 	return (
 		<>
-			<main className="relative pt-[10rem] text-white">
+			<main className="relative pt-[13rem] text-white">
 				<div className="flex flex-col h-full justify-center items-center">
 					<div className="text-center">
 						<p
@@ -21,7 +21,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div
-						className="pt-4 flex justify-center opacity-0 items-center pb-[20rem] animate-slideDown"
+						className="pt-4 flex justify-center opacity-0 items-center pb-[22rem] animate-slideDown"
 						style={{ animationDelay: `200ms` }}
 					>
 						<button className="text-xl bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4 shadow-xl transition duration-200 ease-in-out">

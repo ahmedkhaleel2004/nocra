@@ -4,15 +4,15 @@ import PlayerCard from "../components/PlayerCard";
 const Leaderboard = () => {
 	const genericNames = [
 		"Ahmed",
-		"Jordan",
-		"Taylor",
-		"Riley",
-		"Casey",
-		"Avery",
-		"Morgan",
-		"Quinn",
-		"Reese",
-		"Skyler",
+		"Mohid",
+		"Shaaf",
+		"Hamza",
+		"Ibrahem",
+		"Raya",
+		"Faisal",
+		"Hassan",
+		"Nikhil",
+		"Benji",
 	];
 
 	const university: string = "McMaster";
@@ -94,7 +94,18 @@ const Leaderboard = () => {
 						{/* Main Content */}
 						<div className="relative bg-white rounded-2xl p-4 mb-4 shadow-2xl">
 							{players.map((player, index) => (
-								<PlayerCard key={index} {...player} />
+								<PlayerCard
+									key={index}
+									className={`flex items-center justify-between p-2 border-b border-gray-300 ${
+										index === 0 ? "h-[7rem] text-2xl" : ""
+									}`}
+									className2={`flex items-center ${
+										index === 0
+											? "bg-gradient-to-br from-body-blue to-body-dark-blue rounded-xl px-3 py-2 shadow-xl"
+											: ""
+									}`}
+									{...player}
+								/>
 							))}
 						</div>
 					</div>

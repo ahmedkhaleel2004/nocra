@@ -4,14 +4,22 @@ interface PlayerCardProps {
 	pfp: string;
 	name: string;
 	score: number;
+	className: string;
+	className2: string;
 }
 
-const PlayerCard: React.FC<PlayerCardProps> = ({ pfp, name, score }) => {
+const PlayerCard: React.FC<PlayerCardProps> = ({
+	pfp,
+	name,
+	score,
+	className,
+	className2,
+}) => {
 	const rank = determineRank(score);
 	const rankColor = getRankColor(rank);
 
 	return (
-		<div className="flex items-center justify-between p-2 border-b border-gray-300">
+		<div className={className}>
 			<div className="flex items-center">
 				<img
 					src={pfp}
@@ -22,7 +30,7 @@ const PlayerCard: React.FC<PlayerCardProps> = ({ pfp, name, score }) => {
 				/>
 				<span className="ml-2 font-semibold">{name}</span>
 			</div>
-			<div className="flex items-center">
+			<div className={className2}>
 				<span className={`${rankColor} text-lg font-semibold mr-2`}>
 					{rank}
 				</span>
@@ -48,19 +56,19 @@ const determineRank = (score: number) => {
 const getRankColor = (rank: string) => {
 	switch (rank) {
 		case "Radiant":
-			return "text-gradient bg-gradient-to-r from-gray-400 to-yellow-400";
+			return "text-white";
 		case "Immortal":
 			return "text-red-600";
 		case "Ascendant":
 			return "text-green-600";
 		case "Diamond":
-			return "text-pink-500";
+			return "text-purple-500";
 		case "Platinum":
-			return "text-blue-500";
+			return "text-cyan-600";
 		case "Gold":
 			return "text-yellow-500";
 		case "Silver":
-			return "text-gray-400";
+			return "text-gray-500";
 		case "Bronze":
 			return "text-brown-600";
 		case "Iron":
