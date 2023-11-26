@@ -73,7 +73,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					</span>
 					<ul className="list-disc mt-3 ml-4">
 						<li>
-							<strong>Strength:</strong> The project's user interface is
+							<strong>Strength:</strong> The project&apos;s user interface is
 							intuitive and user-friendly, enhancing the overall user
 							experience.
 						</li>
