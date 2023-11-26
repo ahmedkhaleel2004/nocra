@@ -90,7 +90,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 						</span>
 						<ul className="list-disc mt-3 ml-4">
 							<li>
-								<strong>Positive Insight:</strong> The application’s
+								<strong>Positive Insight:</strong> The application&apos;s
 								architecture is well-structured, making it scalable and
 								maintainable.
 							</li>

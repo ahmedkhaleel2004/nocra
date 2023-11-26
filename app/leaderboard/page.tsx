@@ -17,7 +17,7 @@ const Leaderboard = () => {
 
 	const university: string = "McMaster";
 	const program: string = "Computer Engineering";
-	const year: string = "'26";
+	const year: string = "&apos;26";
 
 	// Function to generate normally distributed numbers
 	function normallyDistributedRandom(mean: number, stddev: number) {
@@ -78,7 +78,7 @@ const Leaderboard = () => {
 							className="text-2xl px-[10rem] pb-64 pt-8 opacity-0 translate-y-4 animate-slideDown"
 							style={{ animationDelay: `150ms` }} // Delay for the subtitle
 						>
-							The top students of {university}'s {program} {year}.
+							The top students of {university}&apos;s {program} {year}.
 						</p>
 					</div>
 				</div>

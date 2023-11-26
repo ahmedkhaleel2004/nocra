@@ -43,7 +43,7 @@ const Projects = () => {
 							className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem] opacity-0 animate-slideDown"
 							style={{ animationDelay: `0ms` }}
 						>
-							{name}'s Projects
+							{name}&apos;s Projects
 						</p>
 					</div>
 				</div>

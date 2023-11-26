@@ -182,7 +182,7 @@ const Grades = () => {
 						className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem] opacity-0 animate-slideDown"
 						style={{ animationDelay: `0ms` }}
 					>
-						{name}'s Grades
+						{name}&apos;s Grades
 					</p>
 				</div>
 			</div>
