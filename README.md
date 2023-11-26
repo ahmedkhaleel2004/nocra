@@ -21,8 +21,8 @@ Read the website for more information.
 ## Local Development
 - **Prerequisites**: Ensure you have Node.js and npm installed.
 - **Setup**:
-  1. Clone the repository: `git clone <repository-url>`
-  2. Change directory: `cd <repository-name>`
+  1. Clone the repository: `git clone https://github.com/ahmedkhaleel2004/nocra.git`
+  2. Change directory: `cd nocra`
   3. Install dependencies: `npm i`
   4. Start the local development server: `npm run dev`
 
