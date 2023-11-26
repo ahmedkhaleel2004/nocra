@@ -3,7 +3,7 @@ import PlayerCard from "../components/PlayerCard";
 
 const Leaderboard = () => {
 	const genericNames = [
-		"Alex",
+		"Ahmed",
 		"Jordan",
 		"Taylor",
 		"Riley",
@@ -59,8 +59,16 @@ const Leaderboard = () => {
 			<main className="relative pt-[5rem] text-white">
 				<div className="flex flex-col h-full justify-center items-center">
 					<div className="text-center">
-						<p className="text-6xl px-[10rem] font-bold">Leaderboard</p>
-						<p className="text-2xl px-[10rem] pb-64 pt-8">
+						<p
+							className="text-6xl px-[10rem] font-bold opacity-0 translate-y-4 animate-slideDown"
+							style={{ animationDelay: `50ms` }} // Delay for the title
+						>
+							Leaderboard
+						</p>
+						<p
+							className="text-2xl px-[10rem] pb-64 pt-8 opacity-0 translate-y-4 animate-slideDown"
+							style={{ animationDelay: `150ms` }} // Delay for the subtitle
+						>
 							The top students of {university}'s {program} {year}.
 						</p>
 					</div>
