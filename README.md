@@ -9,7 +9,7 @@ Nocra is an innovative competitive learning platform designed to motivate studen
 
 Students compete for ranks and status. Although there is no material prize, the pure prestige of being the best amongst your classmates is worthwhile.
 
-Read the website for more information.
+Read the website for more information. (Only works on big computer screens)
 
 ## Key Features
 - **Competitive Ranking System**: Students are ranked based on their performance in both academic grades and project submissions.
