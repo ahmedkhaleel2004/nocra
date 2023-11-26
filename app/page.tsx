@@ -7,14 +7,23 @@ export default function Home() {
 			<main className="relative pt-[10rem] text-white">
 				<div className="flex flex-col h-full justify-center items-center">
 					<div className="text-center">
-						<p className="text-6xl px-[10rem] font-bold">
+						<p
+							className="text-6xl px-[10rem] font-bold opacity-0 translate-y-4 animate-slideDown"
+							style={{ animationDelay: `50ms` }} // Delay for the main title
+						>
 							Let the results speak
 						</p>
-						<p className="text-2xl px-[10rem] pt-8">
+						<p
+							className="text-2xl px-[10rem] pt-8 opacity-0 translate-y-4 animate-slideDown"
+							style={{ animationDelay: `150ms` }} // Delay for the subtitle
+						>
 							Compete to rank up in your career. Fuel your superiority complex.
 						</p>
 					</div>
-					<div className="pt-4 flex justify-center items-center pb-[20rem]">
+					<div
+						className="pt-4 flex justify-center opacity-0 items-center pb-[20rem] animate-slideDown"
+						style={{ animationDelay: `200ms` }}
+					>
 						<button className="text-xl bg-blue-700 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4 shadow-xl transition duration-200 ease-in-out">
 							<SiGoogle className="mr-3 h-[1.5rem]" /> Sign In
 						</button>

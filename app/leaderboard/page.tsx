@@ -84,12 +84,19 @@ const Leaderboard = () => {
 					</svg>
 				</div>
 			</main>
-			<section className="bg-white pt-10">
+			<section className="bg-white">
 				<div className="p-16 flex justify-center">
-					<div className="bg-white flex-grow rounded-2xl p-4 mb-4 max-w-xl shadow-2xl">
-						{players.map((player, index) => (
-							<PlayerCard key={index} {...player} />
-						))}
+					{/* Underglow Container */}
+					<div className="relative flex-grow max-w-xl">
+						{/* Underglow Effect */}
+						<div className="absolute inset-0 m-2 rounded-3xl blur-[3rem] transition duration-1000 bg-gradient-to-r from-blue-800 to-blue-400"></div>
+
+						{/* Main Content */}
+						<div className="relative bg-white rounded-2xl p-4 mb-4 shadow-2xl">
+							{players.map((player, index) => (
+								<PlayerCard key={index} {...player} />
+							))}
+						</div>
 					</div>
 				</div>
 			</section>

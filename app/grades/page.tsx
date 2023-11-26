@@ -178,7 +178,10 @@ const Grades = () => {
 			</main>
 			<div className="flex flex-col h-full justify-center items-center">
 				<div className="text-center">
-					<p className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem]">
+					<p
+						className="text-4xl text-shadow text-white font-bold pt-[4rem] pb-[3rem] opacity-0 animate-slideDown"
+						style={{ animationDelay: `0ms` }}
+					>
 						{name}'s Grades
 					</p>
 				</div>
@@ -188,7 +191,7 @@ const Grades = () => {
 					<div
 						key={course.courseName}
 						className="opacity-0 translate-y-4 animate-slideDown"
-						style={{ animationDelay: `${index * 50}ms` }}
+						style={{ animationDelay: `${index * 50 + 100}ms` }}
 					>
 						<CourseCard
 							{...course}
