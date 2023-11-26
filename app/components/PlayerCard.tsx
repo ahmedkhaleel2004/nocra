@@ -6,6 +6,7 @@ interface PlayerCardProps {
 	score: number;
 	className: string;
 	className2: string;
+	dailyChange: number;
 }
 
 const PlayerCard: React.FC<PlayerCardProps> = ({
@@ -14,10 +15,22 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
 	score,
 	className,
 	className2,
+	dailyChange,
 }) => {
 	const rank = determineRank(score);
 	const rankColor = getRankColor(rank);
-
+	const dailyChangeIndicator =
+		dailyChange >= 0 ? (
+			<span className="text-green-500 flex items-center pl-2 font-semibold">
+				<span className="material-icons">arrow_up</span>
+				<span className="ml-1">{Math.abs(dailyChange)}</span>
+			</span>
+		) : (
+			<span className="text-red-500 flex items-center pl-2 font-semibold">
+				<span className="material-icons">arrow_down</span>
+				<span className="ml-1">{Math.abs(dailyChange)}</span>
+			</span>
+		);
 	return (
 		<div className={className}>
 			<div className="flex items-center">
@@ -28,7 +41,8 @@ const PlayerCard: React.FC<PlayerCardProps> = ({
 					height={40}
 					className="rounded-full"
 				/>
-				<span className="ml-2 font-semibold">{name}</span>
+				<span className="ml-2 font-bold">{name}</span>
+				{dailyChangeIndicator}
 			</div>
 			<div className={className2}>
 				<span className={`${rankColor} text-lg font-semibold mr-2`}>

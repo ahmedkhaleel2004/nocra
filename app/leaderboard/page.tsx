@@ -34,6 +34,14 @@ const Leaderboard = () => {
 	// thanks chatgpt
 	let players = genericNames.map((name, index) => {
 		let score;
+		let dailyChange;
+		if (index === 0) {
+			// Top player can only have positive or no change
+			dailyChange = Math.floor(Math.random() * 11); // 0 to +10
+		} else {
+			// Other players can move up or down, but not more than their current rank
+			dailyChange = Math.floor(Math.random() * (index * 2 + 1)) - index; // -index to +index
+		}
 		if (index === 0) {
 			// Assign a high score to the first player
 			score = 900 + Math.floor(Math.random() * 101); // Score between 900 and 1000
@@ -48,6 +56,7 @@ const Leaderboard = () => {
 			pfp: "/pfp.png",
 			name: name,
 			score: score,
+			dailyChange,
 		};
 	});
 
