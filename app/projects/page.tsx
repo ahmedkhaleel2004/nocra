@@ -9,14 +9,14 @@ const Projects = () => {
 			score: "253",
 			description:
 				"A custom physical therapy solution for MS patients to improve hand mobility and remain active.",
-			tags: "Inventor, RPi, Code",
-			date: "2028-10-10",
+			tags: "Inventor, RPi, Hardware",
+			date: "2023-10-10",
 			imageUrl: "/dummyImage.png",
 		},
 		{
-			title: "Code!",
+			title: "Discord Bot",
 			score: "129",
-			description: "Today I coded a discord bot.",
+			description: "Custom bot to manage my server and handle user inquiries.",
 			tags: "Python, Requests, Async/Await",
 			date: "2023-08-29",
 			imageUrl: "/code.jpg",

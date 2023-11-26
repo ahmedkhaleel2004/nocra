@@ -66,7 +66,42 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 				</button>
 			</div>
 			<DialogBox isOpen={isDialogOpen} onClose={handleDialogClose}>
-				<p>Project feedback will be displayed here.</p>
+				<div>
+					{/* Peer Analysis Section */}
+					<span className="font-bold text-white bg-green-600 rounded-xl shadow-xl px-2 py-1">
+						Peer Analysis:
+					</span>
+					<ul className="list-disc mt-3 ml-4">
+						<li>
+							<strong>Strength:</strong> The project's user interface is
+							intuitive and user-friendly, enhancing the overall user
+							experience.
+						</li>
+						<li>
+							<strong>Improvement Needed:</strong> The response time for
+							database queries can be optimized to improve performance.
+						</li>
+					</ul>
+
+					{/* AI Analysis Section */}
+					<div className="mt-4 p-2">
+						<span className="font-bold text-white bg-blue-600 rounded-xl shadow-xl px-2 py-1">
+							AI Analysis:
+						</span>
+						<ul className="list-disc mt-3 ml-4">
+							<li>
+								<strong>Positive Insight:</strong> The application’s
+								architecture is well-structured, making it scalable and
+								maintainable.
+							</li>
+							<li>
+								<strong>Suggestion:</strong> Implementing additional security
+								measures, such as input validation and encryption, could enhance
+								data security.
+							</li>
+						</ul>
+					</div>
+				</div>
 			</DialogBox>
 		</div>
 	);

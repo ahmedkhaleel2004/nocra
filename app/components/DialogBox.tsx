@@ -16,11 +16,11 @@ const DialogBox: React.FC<DialogBoxProps> = ({ isOpen, onClose, children }) => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
-					className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4"
+					className="fixed inset-0 flex justify-center items-center p-4"
 					onClick={onClose}
 				>
 					<motion.div
-						className="bg-white rounded-lg shadow-lg p-6"
+						className="bg-white shadow-custom-large rounded-lg p-6"
 						onClick={(e) => e.stopPropagation()} // Prevents click event from reaching the overlay
 						initial={{ scale: 0.9 }}
 						animate={{ scale: 1 }}
