@@ -17,7 +17,7 @@ const Leaderboard = () => {
 
 	const university: string = "McMaster";
 	const program: string = "Computer Engineering";
-	const year: string = "&apos;26";
+	const year: string = "'26";
 
 	// Function to generate normally distributed numbers
 	function normallyDistributedRandom(mean: number, stddev: number) {
