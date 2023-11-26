@@ -20,3 +20,9 @@ body {
 	scrollbar-width: none; /* Firefox */
 }
 
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
